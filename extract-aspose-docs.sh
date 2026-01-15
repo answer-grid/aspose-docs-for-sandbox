@@ -85,6 +85,10 @@ fi
 # Clean up temp directory
 rm -rf "$TEMP_DIR"
 
+# Remove empty/useless directories
+echo "Removing empty directories..."
+rm -rf "$EXTRACT_DIR/en/python-net/api-reference"  # Just links to external docs
+
 # Count what we have
 MD_COUNT=$(find "$EXTRACT_DIR" -name "*.md" | wc -l | tr -d ' ')
 IMG_COUNT=$(find "$EXTRACT_DIR" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.svg" -o -name "*.webp" \) | wc -l | tr -d ' ')
