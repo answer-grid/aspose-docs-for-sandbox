@@ -1,0 +1,21 @@
+# Zip files
+*.zip
+
+# Images (will add back selectively later)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.ico
+*.bmp
+*.tiff
+*.tif
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Extracted original folder (we use /docs instead)
+Aspose.Slides-Documentation-master/
